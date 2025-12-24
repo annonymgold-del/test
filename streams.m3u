@@ -1,3 +1,28 @@
 #EXTM3U
-#EXTINF:-1,Das Erste HD
+
+#EXTINF:-1 group-title="DE-ÖR",Das Erste HD
 pipe:///usr/bin/ffmpeg -i https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8 -c copy -f mpegts pipe:1
+
+#EXTINF:-1 group-title="DE-ÖR",ZDF HD
+pipe:///usr/bin/ffmpeg -i https://zdf-hls-live.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8 -c copy -f mpegts pipe:1
+
+#EXTINF:-1 group-title="DE-ÖR",ZDFneo HD
+pipe:///usr/bin/ffmpeg -i https://zdf-hls-live.akamaized.net/hls/live/2016502/de/veryhigh/master.m3u8 -c copy -f mpegts pipe:1
+
+#EXTINF:-1 group-title="DE-ÖR",ZDFinfo HD
+pipe:///usr/bin/ffmpeg -i https://zdf-hls-live.akamaized.net/hls/live/2016501/de/veryhigh/master.m3u8 -c copy -f mpegts pipe:1
+
+#EXTINF:-1 group-title="DE-ÖR",3sat HD
+pipe:///usr/bin/ffmpeg -i https://3sat-live.akamaized.net/hls/live/2016569/de/high/master.m3u8 -c copy -f mpegts pipe:1
+
+#EXTINF:-1 group-title="DE-ÖR",arte HD
+pipe:///usr/bin/ffmpeg -i https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/master.m3u8 -c copy -f mpegts pipe:1
+
+#EXTINF:-1 group-title="DE-ÖR",phoenix HD
+pipe:///usr/bin/ffmpeg -i https://phoenix-live.akamaized.net/hls/live/2016597/de/high/master.m3u8 -c copy -f mpegts pipe:1
+
+#EXTINF:-1 group-title="DE-ÖR",tagesschau24 HD
+pipe:///usr/bin/ffmpeg -i https://tagesschau24-live.ard-mcdn.de/tagesschau24/live/hls/de/master.m3u8 -c copy -f mpegts pipe:1
+
+#EXTINF:-1 group-title="DE-ÖR",ARD alpha HD
+pipe:///usr/bin/ffmpeg -i https://ardalpha-live.ard-mcdn.de/ardalpha/live/hls/de/master.m3u8 -c copy -f mpegts pipe:1
