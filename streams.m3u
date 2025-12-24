@@ -1,3 +1,3 @@
 #EXTM3U
 #EXTINF:-1,Das Erste HD
-pipe://ffmpeg -i https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8 -vcodec copy -acodec copy -metadata service_name=Das\ Erste\ HD -metadata service_provider=IPTV-DE -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
+pipe:///usr/bin/ffmpeg -i https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8 -c copy -f mpegts pipe:1
