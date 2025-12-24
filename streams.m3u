@@ -1,0 +1,10 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id="daserstehd" tvg-name="Das Erste HD" group-title="ARD",Das Erste HD
+pipe://ffmpeg -loglevel fatal -fflags +genpts+igndts -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 10 -i https://daserste-live.ard-mcdn.de/daserste/live/hls/de/variant_5.m3u8 -map 0:v:0 -map 0:a:0 -c copy -mpegts_service_type advanced_codec_digital_hdtv -mpegts_flags +pat_pmt_at_frames -metadata service_name="Das Erste HD" -metadata service_provider="IPTV-DE" -f mpegts pipe:1
+
+#EXTINF:-1 tvg-id="zdfhd" tvg-name="ZDF HD" group-title="ZDF",ZDF HD
+pipe://ffmpeg -loglevel fatal -fflags +genpts+igndts -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 10 -i https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/variant_5.m3u8 -map 0:v:0 -map 0:a:0 -c copy -mpegts_service_type advanced_codec_digital_hdtv -mpegts_flags +pat_pmt_at_frames -metadata service_name="ZDF HD" -metadata service_provider="IPTV-DE" -f mpegts pipe:1
+
+#EXTINF:-1 tvg-id="artehd" tvg-name="ARTE HD" group-title="ARTE",ARTE HD
+pipe://ffmpeg -loglevel fatal -fflags +genpts+igndts -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 10 -i https://artelive.akamaized.net/hls/live/2031003/artelive_de/high/variant_4.m3u8 -map 0:v:0 -map 0:a:0 -c copy -mpegts_service_type advanced_codec_digital_hdtv -mpegts_flags +pat_pmt_at_frames -metadata service_name="ARTE HD" -metadata service_provider="IPTV-DE" -f mpegts pipe:1
